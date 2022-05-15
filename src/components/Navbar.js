@@ -8,7 +8,7 @@ const Navbar = ({ children }) => {
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content flex flex-col">
                 {/* <!-- Navbar --> */}
-                <div className="w-full navbar bg-base-100 px-20">
+                <div className="fixed top-0 w-full navbar bg-base-100 px-20 z-50">
                     <div className="flex-1 px-2 mx-2">Clean Co Live</div>
                     <div className="flex-none lg:hidden">
                         <label for="my-drawer-3" className="btn btn-square btn-ghost">
@@ -58,7 +58,7 @@ const Navbar = ({ children }) => {
                 <label for="my-drawer-3" className="drawer-overlay"></label>
                 <ul className="menu p-4 overflow-y-auto w-80 bg-base-100">
                     {/* <!-- Sidebar content here --> */}
-                    <li><NavLink to='/home' className='rounded-lg'>Home</NavLink></li>
+                    <li><NavLink to='/' className='rounded-lg'>Home</NavLink></li>
                     <li><NavLink to='/about' className='rounded-lg'>About</NavLink></li>
                     <li><NavLink to='/services' className='rounded-lg'>Services</NavLink></li>
                     <li><NavLink to='/contact' className='rounded-lg'>Contact</NavLink></li>
